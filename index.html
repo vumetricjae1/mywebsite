@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+<head>
+<title>CSP bypass</title>
+</head>
+<body>
+
+        <div theme="">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account?id=wiener">My account</a><p>|</p>
+                            <a href="/logout">Log out</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <h1>My Account</h1>
+                    <div id=account-content>
+                        <p>Your username is: vumetric</p>
+                        <p>Your email is: pentest1@vumetric.com</p>
+                        <form class="login-form" name="change-email-form" action="/my-account/change-email" method="POST">
+                            <label>Email</label>
+                            <input required type="email" name="email" value=""><iframe name='">
+                            <input required type="hidden" name="csrf" value="W8L3j6I5eGWDfq3aQWPqqjvUZX5r9PHc">
+                            <button class='button' type='submit'> Update email </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+</body>
+</html>
